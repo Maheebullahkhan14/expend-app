@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useState } from "react";
+import "./App.css";
+import Budget from "./Components/Budget";
+import Allplans from "./Components/Allplans";
+import HomeApp from "./Components/HomeApp";
+import IncomeForm from "./Components/IncomeForm";
+import SpendingForm from "./Components/Spendingform";
+import Newplanform from "./Components/Newplanform";
+import Spending_list from "./Components/Spending_list";
+
+import MyContextProvider from "./ContextApi";
+import { MynewContext } from "./ContextApi";
 
 function App() {
+  const { Incomedata } = useContext(MynewContext);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HomeApp  Incomedata = {Incomedata} />
+    </>
   );
 }
 

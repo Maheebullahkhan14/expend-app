@@ -1,5 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
 .App {
-  text-align: center;
+  /* width: 380px; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 0 auto;
+  /* margin-top: 50px; */
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.main-app-box-content {
+  margin-top: 50px;
+}
+
+.main-budget-cover-wrapper {
+  width: 380px;
 }
 
 .App-logo {
@@ -34,5 +62,797 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.budget-card-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.budget-main-box-cover {
+  padding: 10px;
+  background-color: #e4fe68;
+  border-radius: 10px;
+}
+.income-card-box {
+  width: 45%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 15px 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.income-spend-cover {
+  display: flex;
+  justify-content: space-between;
+}
+.spending-card-box {
+  height: 80px;
+  width: 44%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.budget-card-box h6 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+.budget-card-box h3 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+.budget-btn-box button {
+  width: 44%;
+  margin: 0px 6px;
+  padding: 12px 0px;
+  border-radius: 25px;
+  border: none;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.income-spend-card-wrapper h6 {
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.income_balance_btn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.income_balance_btn img {
+  width: 70%;
+}
+.income-card-details {
+  display: flex;
+  justify-content: space-between;
+}
+.income-header h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.income-header h4 {
+  font-size: 20px;
+}
+.spending_balance_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spending_balance_btn img {
+  width: 70%;
+}
+.spending-card-details {
+  display: flex;
+  justify-content: space-between;
+}
+.spending-count-details h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.spending-count-details h4 {
+  font-size: 21px;
+}
+.my-plans-cover-header {
+  display: flex;
+  justify-content: space-between;
+}
+.my-plans-list-cards {
+  margin-top: 5px;
+}
+/* .plans-card-cover {
+  border-radius: 17px;
+  padding: 14px;
+  background-color: white;
+  margin: 6px 10px;
+  padding-bottom: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 15px;
+} */
+
+.my-plans-list-cards {
+  border-radius: 17px;
+  padding: 14px;
+  background-color: white;
+  margin: 6px 10px;
+  padding-bottom: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 15px;
+}
+.planscard-main-cover-box {
+  border-radius: 17px;
+  padding: 14px;
+  background-color: white;
+  margin: 6px 10px;
+  padding-bottom: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 15px;
+}
+
+.plans-card-header h6 {
+  color: #74cfe3;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: oblique;
+}
+.my-plans-cover {
+  padding-top: 10px;
+  background-color: #f8f8f1;
+  padding-bottom: 10px;
+  width: 380px;
+  padding: 14px 5px;
+  margin-top: -5px;
+  position: relative;
+  z-index: -1;
+}
+.plans-card-header h5 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.my-plans-cover-header h6 {
+  font-size: 14px;
+  margin: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.my-plans-cover-header h6 button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+.plans-count-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+span.plans-total-count {
+  color: #97dbb2;
+  font-weight: 500;
+}
+.budget-btn-box button a {
+  color: white;
+  text-decoration: none;
+}
+.form-cover {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+form {
+  padding: 15px 28px;
+  border-radius: 15px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: #f8ffd9;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 23px;
+}
+input::placeholder {
+  font-size: 13px;
+  color: rgb(137, 135, 135) !important;
+}
+.form-group label {
+  font-size: 14px;
+  padding: 2px 3px;
+  left: 8px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.475rem 0.85rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+button.submit-form {
+  padding: 5px 25px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.budget-header-details h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.budget-header-details p {
+  margin-bottom: 0px;
+  font-size: 13px;
+  color: darkgray;
+  margin-top: 3px;
+}
+.budget-header-details {
+  margin-bottom: 15px;
+}
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+}
+.bell-icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeee8;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.bell-icon-box img {
+  width: 110%;
+}
+.form-header {
+  margin-bottom: 21px;
+}
+button.submit_Income_Form {
+  padding: 5px 35px;
+  border-radius: 7px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 12px;
+}
+.form-header h2 {
+  font-size: 24px;
+  margin-bottom: 11px;
+}
+
+.drop-down-box-cover .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  display: none !important;
+}
+.drop-down-box-cover .dropdown button {
+  background: #ececec2e;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.drop-down-box-cover a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.dropdown-menu.show {
+  display: block;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.new-plan-form {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+.new-plan-header-input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+.new-plan-header-input-box label {
+  margin-bottom: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.new-plan-header-input-box input {
+  border-radius: 7px;
+  padding: 8px 15px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.new-plan-input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.new-plan-input-box label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: black;
+  font-weight: 300;
+}
+.new-plan-input-box select {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.new-plan-input-box select {
+  font-size: 13px;
+  color: dimgray !important;
+}
+.new-plan-input-box input {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 46px;
+  font-size: 14px;
+  color: dimgray;
+}
+.submit-new-plan-btn-box button {
+  padding: 8px 25px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 25px;
+}
+.submit-new-plan-btn-box {
+  display: flex;
+  justify-content: center;
+}
+.new-plan-form form {
+  padding: 15px 0px;
+}
+.new-plan-form-title-header {
+  padding: 0px 28px;
+}
+.plan-form-details-cover {
+  background-color: #f8f8f1;
+  margin: 11px 9px !important;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-top: 28px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.plan-form-details-cover h5 {
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+/* IncomeList Styles Start Here -=-=--=-=---=--=--=======-=-=-=- */
+.income-list-nav ul li a img {
+  width: 20px;
+}
+.income-list-nav ul {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Income-list-header {
+  background-color: #e4fe68;
+  padding: 15px 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Income-list-countBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 0px;
+}
+.Income-list-countBox h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+.Income-list-countBox h2 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.Income-list-box-cover {
+  width: 380px;
+  /* margin: 0 auto; */
+  margin-top: 80px;
+  padding: 0px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+.list-box {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background-color: #bccd6d1f;
+  padding: 5px 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  border-radius: 11px;
+  position: relative;
+}
+.list-box-details {
+  display: flex;
+  justify-content: space-between;
+}
+.list-box h5 {
+  font-size: 17px;
+}
+.main-income-list-box {
+  margin-top: 30px;
+  padding: 15px 15px;
+  padding-bottom: 5px;
+}
+h5.listbox-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.list-box h6 {
+  font-weight: 700;
+  margin-bottom: 0px;
+  background-color: #000000db;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #ffffffc4;
+  font-size: 14px;
+  width: 80px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 47px;
+}
+.list-box h5 {
+  font-size: 17px;
+  font-weight: 300;
+}
+.income-list-nav ul li h5 {
+  margin-bottom: 0px;
+}
+
+/* SideNavbar Design-=-==--=-=- */
+.side-nav-main-wrapper {
+  position: fixed;
+  background-color: black;
+  padding: 15px 10px;
+  height: 100vh;
+  top: 0;
+  padding-top: 45px;
+}
+.side-main-cover ul {
+  padding: 0px;
+  list-style: none;
+}
+.side-main-cover ul li {
+  margin: 30px 10px;
+  display: flex;
+  align-items: center;
+}
+.side-main-cover ul li a {
+  color: white;
+  text-decoration: none;
+}
+.icon-box {
+  width: 30px;
+  height: 30px;
+  background-color: #d3ff00;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.icon-box img {
+  width: 60%;
+}
+.side-main-cover ul li a {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.main-app-box-content {
+  margin-top: 50px;
+  z-index: 999999;
+  position: relative;
+}
+.edit-income-form-btn {
+  font-weight: 700;
+  margin-bottom: 0px;
+  background-color: #000000db;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #ffffffc4;
+  font-size: 14px;
+  width: 70px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 47px;
+}
+.fadeInclass {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+/* Animation-=-=-=-=-=-= */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Nodata-icon-box img {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.my-plans-list-cover {
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  width: 70%;
+  padding-bottom: 45px;
+  border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.all-plans-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.all-plans-cover .plans-card-cover {
+  width: 280px;
+}
+h5.header-title {
+  text-align: center;
+  width: 30%;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #d2f42c;
+  padding: 9px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  font-weight: 600;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.No-data-cover h5 {
+  text-align: center;
+}
+.progress {
+  height: 12px;
+}
+.progress-bar {
+  background-color: #d2f42c;
+}
+
+.Toastify__progress-bar-theme--light {
+  background: #d3ff00 !important;
+}
+.Toastify__close-button--light {
+  color: #ffff !important;
+  opacity: 0.5 !important;
+}
+
+.main-budget-banner-img img {
+  width: 118%;
+  /* margin-right: -145px; */
+}
+.Income-banner-img img {
+  width: 120%;
+}
+.Income_list_main-cover-wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+.income-banner-img-box img {
+  width: 155%;
+}
+.Income_list_cover {
+  height: 100vh;
+  overflow: hidden;
+}
+.income-banner-img-box {
+  margin-top: 100px;
+}
+
+.income-banner-img-box {
+  margin-top: 140px;
+  margin-left: -125px;
+  margin-right: 130px;
+}
+/* .plans-banner-img {
+  position: absolute;
+} */
+
+.plans-banner-img img {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: -48px;
+  display: flex;
+}
+
+button.deletebtn {
+  width: 22px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  right: -10px;
+  top: 9px;
+  background: transparent;
+}
+button.editbtn {
+  width: 22px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  right: 22px;
+  top: 9px;
+}
+button.deletebtn img {
+  width: 22px;
+  transform: scale(1.8);
+}
+button.editbtn img {
+  width: 22px;
+}
+.planscard-main-cover-box {
+  position: relative;
+}
+
+.edit-btn-box {
+  position: absolute;
+  top: 2px;
+  right: 21px;
+}
+
+/* Mobile Resposnive Styles Starts */
+@media only screen and (max-width: 480px) {
+  .main-budget-cover-wrapper {
+    width: 100%;
+  }
+  .App {
+    height: auto;
+  }
+  .my-plans-cover {
+    width: 100%;
+  }
+  .main-budget-banner-img img {
+    margin-bottom: -40px;
+  }
+  .side-main-cover ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .side-nav-main-wrapper {
+    padding: 0px 2px;
+    padding-top: 0px;
+    height: auto;
+    bottom: 0 !important;
+    top: inherit;
+    width: 100%;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+  .side-main-cover ul li a {
+    font-size: 11px;
+    margin-left: 8px;
+  }
+  .side-main-cover ul li {
+    margin: 5px 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .icon-box {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+  .form-cover {
+    width: auto;
+    margin-top: 60px;
+  }
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Toastify__toast-container--top-left,
+  .Toastify__toast-container--top-center,
+  .Toastify__toast-container--top-right {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .Income_list_main-cover-wrapper {
+    height: auto;
+  }
+
+  .Income-list-box-cover {
+    width: 100%;
+    margin-top: -15px;
+    margin-bottom: 25px;
+  }
+  .my-plans-list-cover {
+    position: relative;
+    left: 0px;
+    top: 15px;
+    width: 100%;
+    border-radius: 22px;
+  }
+  h5.header-title {
+    width: 54%;
+  }
+  .plans-banner-img img {
+    width: 100%;
   }
 }
